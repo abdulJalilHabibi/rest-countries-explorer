@@ -1,5 +1,5 @@
 import React from "react";
-
+import eightData from "../eightData.json";
 import { Link } from "react-router-dom";
 
 export default function Country({
@@ -10,7 +10,7 @@ export default function Country({
   selectedRegion,
 }) {
   const countriesToShow =
-    query || selectedRegion ? (query ? filterData : filterRegion) : data1;
+    query || selectedRegion ? (query ? filterData : filterRegion) : eightData;
 
   return (
     <div className="   flex flex-col p-10 gap-10 md:grid md:grid-cols-4 md:p-16 ">
